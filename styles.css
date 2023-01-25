@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.aboutMe-session{
+    width: 100%;
+}
+.aboutMe-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.front-content{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+     gap: 2.5rem;
+    width: 100%;
+}
+tr{
+    gap: 3.5rem;
+}
+
+td{
+   padding-left: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-right: 20px;
+}
+.downloadCVBtnDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.downloadCVBtn{
+     margin-top: 20px;
+    border: none;
+    padding: 20px;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: color linear;
+    position: relative;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: larger;
+    background-color: lightgrey;
+}
+.downloadCVBtn:hover{
+     transform: scale(1.09);
+    transition: all 0.4s ease-in;
+    background-color: rgb(62, 62, 62);
+    color: whitesmoke;
+}
+.personalInfoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.personalInfoBoxDiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 500px;
+   
+}
+.career{
+    border: 1px solid gray;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+h2{
+    width: 100%;
+    padding: 20px;
+}
+.progress-session{
+    width: 100%;
+}
+.skill-container {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+
+.skill-container .skill {
+    position: relative;
+}
+
+.skill-container .skill .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0 0 0 /.15),
+        -6px -6px 10px -1px rgba(255 255 255 / .7);
+}
+
+.skill-container .skill .outer .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0 0 0/ .2),
+        inset -4px -4px 6px -1px rgba(255 255 255 / .7),
+        -.5px -.5px 0px rgba(255 255 255 / 1),
+        .5px .5px 0px rgba(0 0 0 /.15),
+        0px 12px 10px -10px rgba(0 0 0 / 0.05);
+}
+
+.skill-container .skill .outer .inner .number {
+    font-weight: 800;
+}
+
+
+.skill-container .skill:nth-child(1) .outer .inner .number {
+    color: #f75023;
+}
+
+.skill-container .skill:nth-child(2) .outer .inner .number {
+    color: #4fa0ff;
+}
+
+.skill-container .skill:nth-child(3) .outer .inner .number {
+    color: #7811f7;
+}
+.skill-container .skill:nth-child(3) .outer .inner .number {
+    color: greenyellow;
+}
+
+circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transition: 2s linear;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-container .skill:nth-child(1) circle {
+    stroke: #f75023;
+}
+
+.skill-container .skill:nth-child(2) circle {
+    stroke: #4fa0ff;
+}
+
+.skill-container .skill:nth-child(3) circle {
+    stroke: #7811f7;
+}
+.skill-container .skill:nth-child(4) circle {
+    stroke: black;
+}
+
+
+@media (max-width:900px){
+    td{
+        display: block;
+    }
+    .front-content{
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .skill-container{
+        flex-direction: column;
+    }
+    .skill-container .skill{
+        margin: 0;
+    }
+}
