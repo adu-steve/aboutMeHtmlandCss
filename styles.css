@@ -1,8 +1,9 @@
-*{
+
+*,html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
     scroll-behavior: smooth;
 }
 body{
@@ -20,8 +21,9 @@ h1{
 }
 .aboutMe-session{
     width: 100%;
+    
 }
-.aboutMe-header{
+.aboutMe-header, .myskills-header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,21 +105,26 @@ td{
 h2{
     width: 100%;
     padding: 20px;
+    text-align: center;
+}
+.infos{
+    padding: 0;
 }
 .progress-session{
     width: 100%;
 }
 .skill-container {
-    height: 100vh;
+    
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-   
+    margin-top: 30px;
 }
 
 .skill-container .skill {
     position: relative;
+
 }
 
 .skill-container .skill .outer {
@@ -149,18 +156,18 @@ h2{
 
 
 .skill-container .skill:nth-child(1) .outer .inner .number {
-    color: #f75023;
+    color: #000;
 }
 
 .skill-container .skill:nth-child(2) .outer .inner .number {
-    color: #4fa0ff;
+    color: #000;
 }
 
 .skill-container .skill:nth-child(3) .outer .inner .number {
-    color: #7811f7;
+    color: #000;
 }
-.skill-container .skill:nth-child(3) .outer .inner .number {
-    color: greenyellow;
+.skill-container .skill:nth-child(4) .outer .inner .number {
+    color: #000;
 }
 
 circle {
@@ -178,18 +185,22 @@ svg {
 }
 
 .skill-container .skill:nth-child(1) circle {
-    stroke: #f75023;
+    stroke: #000;
 }
 
 .skill-container .skill:nth-child(2) circle {
-    stroke: #4fa0ff;
+    stroke: #000;
 }
 
 .skill-container .skill:nth-child(3) circle {
-    stroke: #7811f7;
+    stroke: #000;
 }
 .skill-container .skill:nth-child(4) circle {
-    stroke: black;
+    stroke: #000;
+}
+hr{
+    border: 1px solid lightgray;
+    width: 50%;
 }
 
 
@@ -207,5 +218,7 @@ svg {
     }
     .skill-container .skill{
         margin: 0;
+      
+        
     }
 }
