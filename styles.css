@@ -12,6 +12,8 @@ body{
     align-items: center;
     background-color: whitesmoke;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 h1{
     font-size: 60px;
@@ -185,23 +187,82 @@ svg {
 }
 
 .skill-container .skill:nth-child(1) circle {
-    stroke: #000;
+    stroke: yellowgreen;
 }
 
 .skill-container .skill:nth-child(2) circle {
-    stroke: #000;
+    stroke: yellowgreen;
 }
 
 .skill-container .skill:nth-child(3) circle {
-    stroke: #000;
+    stroke: yellowgreen;
 }
 .skill-container .skill:nth-child(4) circle {
-    stroke: #000;
+    stroke: yellowgreen;
 }
 hr{
     border: 1px solid lightgray;
     width: 50%;
+    margin: 20px;
 }
+.card-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.timeline-area{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0 20px 0 30px;
+    margin: 100px;
+    width: 100%;
+    gap: 20px;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 2px dotted #ccc;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.card::before{
+    color: yellowgreen;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f19d";
+    font-size: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+}
+.card::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent yellowgreen transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+}
+
+
+
 
 
 @media (max-width:900px){
@@ -220,5 +281,11 @@ hr{
         margin: 0;
       
         
+    }
+    .card-component{
+        flex-direction: column;
+    }
+    .card{
+        flex-wrap: wrap;
     }
 }
